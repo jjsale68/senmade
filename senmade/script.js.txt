@@ -25,9 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
 // Memory Jar
 function showMemoryNote() {
     const notes = [
-        'Happy Birthday, Kofoworola! E.K Fashion Fusion’s gonna slay! ????',
-        'Your dancing makes June 5 the hottest vibe! ??',
-        'Ziba Beach with you? My heart’s all in, love! ??'
+        'Happy Birthday, Kofoworola! E.K Fashion Fusionâ€™s gonna slay!',
+        'Your dancing makes June 5 the hottest vibe!',
+        'Ziba Beach with you? My heartâ€™s all in, love!'
     ];
     const note = notes[Math.floor(Math.random() * notes.length)];
     const noteElement = document.getElementById('memory-note');
@@ -62,7 +62,7 @@ if (countdownElement) {
         const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        countdownElement.textContent = `Ziba Beach Bash in ${hours}h ${minutes}m ${seconds}s! ??`;
+        countdownElement.textContent = `Ziba Beach Bash in ${hours}h ${minutes}m ${seconds}s!`;
         if (distance < 0) {
             clearInterval(countdown);
             countdownElement.textContent = 'Happy Birthday, Kofoworola! Ziba Time! ??';
